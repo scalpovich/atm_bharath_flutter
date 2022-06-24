@@ -152,7 +152,7 @@ class MoneyTransferReportDetailsCard extends StatelessWidget {
               ],
             ),
           ),
-        )
+        ),
       ],
     );
   }
