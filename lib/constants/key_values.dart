@@ -1,0 +1,55 @@
+// ignore_for_file: constant_identifier_names
+
+class KeyValues {
+  static const String KEY_TOKEN = "access_token";
+  static const String KEY_VERSION = "version";
+  static const String KEY_LOGIN = "login";
+  static const String KEY_USER = "user";
+  static const String KEY_DEVICE_ID = "device_id";
+  static const String KEY_CUST_CODE = "customer_code";
+  static const String KEY_WALLET = "wallet_money";
+  static const String KEY_SHOP = "shop_name";
+  static const String KEY_SHOP_ADDRESS = "shop_address";
+  static const String KEY_SHOP_ADDRESS_LINE = "shop_address_line";
+  static const String KEY_SHOP_GSTN = "shop_gstn";
+  static const String KEY_TRANS_AMNT = "transact_amt";
+  static const String KEY_WAL_AMNT = "wal_amnt";
+  static const String KEY_CUS_EMAIL = "customer_email";
+  static const String KEY_CUS_MOB = "customer_mob";
+  static const String KEY_LOCKING_AMOUNT = "locking_amount";
+  static const String KEY_IS_SYNCED = "isSynced";
+  static const String KEY_CUS_CODE_ENCRYPTED = "cus_code_encrypted";
+  static const String KEY_FCM_DEVICE_ID = "fcm_device_id";
+  static const String KEY_NOTIFICATION_COUNT = "notification_count";
+  static const String KEY_DOOR_STEP_STATUS = "door_step";
+  static const String KEY_SERVER_ID = "server_id";
+  static const String KEY_BASE_URL = "base_url";
+  static const String KEY_IS_DRIVER = "is_driver";
+  static const String KEY_IS_MERCHANT = "is_merchant";
+  static const String KEY_QR_STATUS = "qr_status";
+  static const String KEY_CUSTOMER_STATUS = "customer_status";
+  static const String KEY_DRIVER_CODE = "driver_code";
+  static const String KEY_DRIVER_CODE_ENCRYPTED = "driver_code_encrypted";
+  static const String KEY_DRIVER_NAME = "driver_name";
+  static const String KEY_DRIVER_DUTY_STATUS = "driver_on_duty_status";
+  static const String KEY_ORDER_CANCEL_ID = "order_cancel_id";
+  static const String KEY_PENDING_DATE = "pending_date";
+  static const String KEY_PENDING_IS_LOADED = "pending_isLoading";
+  static const String KEY_ACCEPT_DATE = "pending_date";
+  static const String KEY_ACCEPT_IS_LOADED = "pending_isLoading";
+  static const String KEY_COMPLETE_DATE = "pending_date";
+  static const String KEY_COMPLETE_IS_LOADED = "pending_isLoading";
+  static const String KEY_PARTIAL_PAY = "partial_pay";
+  static const String KEY_FETCH_BILL = "fetch_bill";
+  static const String KEY_ONLINE_VALIDATION = "online_validation";
+  static const String KEY_ICON_IMAGE_URL = "icon_image_url";
+  static const String KEY_QR_TIMEOUT = "qr_timeout";
+  static const String KEY_MONEY_TRANSFER_FLAG = "money_transfer_flag";
+  static const String KEY_BBPS_FLAG = "bbps_flag";
+  static const String KEY_QR_FLAG = "qr_flag";
+  static const String KEY_DOOR_STEP_FLAG = "door_step_flag";
+  static const String KEY_MONEY_TRANSFER_PASSWORD = "money_transfer_password";
+  static const String KEY_BBPS_PASSWORD = "bbps_password";
+  static const String KEY_QR_PASSWORD = "qr_password";
+  static const String KEY_DOOR_STEP_PASSWORD = "door_step_password";
+}

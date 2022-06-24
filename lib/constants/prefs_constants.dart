@@ -1,0 +1,37 @@
+class PrefsConstants {
+  static const String defaultUrl = 'default_url';
+  static const String baseUrl = 'baseUrl';
+  static const String deviceId = 'device_id';
+  static const String customerCode = 'customer_code';
+  static const String walletMoney = 'wallet_money';
+  static const String customerName = 'customer_name';
+  static const String shopGstNo = 'shop_gst_no';
+  static const String userType = 'user_type';
+  static const String driverName = 'driver_name';
+  static const String driverCode = 'driver_code';
+  static const String driverStatus = 'driver_duty_status';
+  static const String customerMobile = 'customer_mobile';
+  static const String customerEmail = 'customer_email';
+  static const String shopAddress = 'shop_address';
+  static const String shopAddressLine = 'shop_address_line';
+  static const String lockingAmount = 'locking_amount';
+  static const String encryptCustomerCode = 'encrypt_customer_code';
+  static const String encryptDriverCode = 'encrypt_driver_code';
+  static const String loginFlag = 'login_flag';
+  static const String logFlag = 'log_flag';
+  static const String syncFlag = 'sync_flag';
+  static const String qrTimeout = 'qr_timeout';
+  static const String bbps = 'bbps';
+  static const String moneyTransfer = 'money_transfer';
+  static const String qr = 'qr';
+  static const String doorStep = 'door_step';
+  static const String bbpsPassword = 'bbps_password';
+  static const String moneyTransferPassword = 'money_transfer_password';
+  static const String qrPassword = 'qr_password';
+  static const String doorStepPassword = 'door_step_password';
+  static const String syncDurationPeriod = 'sync_duration_period';
+  static const String serverTimeoutTime = 'server_timeout_time';
+  static const String appFirstTimeOpened = 'app_first_time_opened';
+  static const String appLanguage = 'app_language';
+  static const String appTheme = 'app_theme';
+}

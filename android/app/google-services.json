@@ -1,0 +1,154 @@
+{
+  "project_info": {
+    "project_number": "684816528885",
+    "project_id": "atm-money-transfer",
+    "storage_bucket": "atm-money-transfer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684816528885:android:00447033f4bea302c61cbc",
+        "android_client_info": {
+          "package_name": "com.kun.atm_flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684816528885-82iktg05ni5kqcsti7bhargrcq4c6j3s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM27uqfPGELbFzhGeBhR67M9yMg5OzyW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684816528885-82iktg05ni5kqcsti7bhargrcq4c6j3s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "684816528885-0l399od5tta7rern9rmtd7pe1oehv2pi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kun.doorstepbankingflutter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684816528885:android:16a73e3e0e152e6fc61cbc",
+        "android_client_info": {
+          "package_name": "com.kun.doorstep_banking_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684816528885-82iktg05ni5kqcsti7bhargrcq4c6j3s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM27uqfPGELbFzhGeBhR67M9yMg5OzyW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684816528885-82iktg05ni5kqcsti7bhargrcq4c6j3s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "684816528885-0l399od5tta7rern9rmtd7pe1oehv2pi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kun.doorstepbankingflutter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684816528885:android:10be1c7ee1d2f137c61cbc",
+        "android_client_info": {
+          "package_name": "com.kun.moneytransfer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684816528885-82iktg05ni5kqcsti7bhargrcq4c6j3s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM27uqfPGELbFzhGeBhR67M9yMg5OzyW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684816528885-82iktg05ni5kqcsti7bhargrcq4c6j3s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "684816528885-0l399od5tta7rern9rmtd7pe1oehv2pi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kun.doorstepbankingflutter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684816528885:android:8ee4b0e5080fe0e3c61cbc",
+        "android_client_info": {
+          "package_name": "com.tids.doorstepbanking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684816528885-82iktg05ni5kqcsti7bhargrcq4c6j3s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM27uqfPGELbFzhGeBhR67M9yMg5OzyW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684816528885-82iktg05ni5kqcsti7bhargrcq4c6j3s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "684816528885-0l399od5tta7rern9rmtd7pe1oehv2pi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kun.doorstepbankingflutter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
