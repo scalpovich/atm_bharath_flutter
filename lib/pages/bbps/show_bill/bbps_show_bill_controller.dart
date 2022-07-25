@@ -5,19 +5,9 @@ import 'package:get/get.dart';
 
 class BBPSShowBillController extends GetxController {
   dynamic arguments = Get.arguments;
-  final billLogo = ''.obs;
-  final billerName = ''.obs;
-  final category = ''.obs;
-  final billId = ''.obs;
-  final billStatus = ''.obs;
-  final billNumber = ''.obs;
-  final billPeriod = ''.obs;
-  final netBillAmount = ''.obs;
-  final customerName = ''.obs;
-  final billAmount = ''.obs;
-  final billDate = ''.obs;
-  final billDueDate = ''.obs;
-  final sourceRefNo = ''.obs;
+  final billLogo = ''.obs,billerName = ''.obs,category = ''.obs,billId = ''.obs,billStatus = ''.obs;
+  final billNumber = ''.obs,billPeriod = ''.obs,netBillAmount = ''.obs,customerName = ''.obs;
+  final billAmount = ''.obs,billDate = ''.obs,billDueDate = ''.obs,sourceRefNo = ''.obs;
   final categoryImage = ''.obs;
 
   List<String> bDate = [];

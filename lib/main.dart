@@ -36,8 +36,10 @@ void main() async {
   _registerHiveAdapter();
   await Firebase.initializeApp();
   await SunmiPrinter.initPrinter();
-  // String? deviceId = await Device().getUserId();
-  // PrefManager().setDeviceId(deviceId!);
+  if (PrefManager().getDeviceId == null) {
+    String? deviceId = await Device().getUserId();
+    PrefManager().setDeviceId(deviceId!);
+  }
   await PushNotificationService().setupInteractedMessage();
   if (PrefManager().getLanguage == null) {
     PrefManager().setLanguage('English');
@@ -105,7 +107,6 @@ class MyApp extends StatelessWidget {
     return Obx(
       () => GetMaterialApp(
         theme: _changeTheme(_settingsController.changeTheme),
-        // color: AppColors.colorsPrimary,
         title: 'app_name'.tr,
         initialRoute: AppStrings.pSplashPage,
         initialBinding: SplashScreenBinding(),
@@ -113,8 +114,6 @@ class MyApp extends StatelessWidget {
         locale: LocalizationService.locale,
         fallbackLocale: LocalizationService.fallbackLocale,
         translations: LocalizationService(),
-        // theme: AppThemes.lightThemeData,
-        // darkTheme: AppThemes.darkThemeData,
         debugShowCheckedModeBanner: false,
         defaultTransition: Transition.leftToRightWithFade,
       ),

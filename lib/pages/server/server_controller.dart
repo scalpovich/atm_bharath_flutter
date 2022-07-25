@@ -6,10 +6,6 @@ import 'package:atm_flutter_app/utils/main_controller.dart';
 import 'package:atm_flutter_app/widgets/dialog_box_widget/snack_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_rx/src/rx_types/rx_types.dart';
-
-import '../../widgets/button_widget/button_widget.dart';
-import '../../widgets/text_widget/text_widget.dart';
 
 class ServerController extends MainController {
   RxList<Server> serverList = <Server>[].obs;
@@ -161,6 +157,6 @@ class ServerController extends MainController {
         value, serverList[index].serverState);
     serverList.insert(index, server2);
     serverList.removeAt(index + 1);
-    commonSnackBar('Server updated - ${serverList[index1].serverUrl}');
+    commonSnackBar('Server updated - ${serverList[index].serverUrl}');
   }
 }

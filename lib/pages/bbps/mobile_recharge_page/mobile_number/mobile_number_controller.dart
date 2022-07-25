@@ -135,7 +135,7 @@ class MobileNumberController extends GetxController {
     clearTextFields();
   }
 
-  ///verifing text field before go to next page
+  ///verifying text field before go to next page
   void verifyField() {
     if (senderNameController.text.isEmpty ||
         senderNumberController.text.isEmpty ||

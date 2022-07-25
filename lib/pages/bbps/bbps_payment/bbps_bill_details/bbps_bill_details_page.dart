@@ -173,20 +173,13 @@ class BBPSBillDetailsPage extends GetView<BBPSBillDetailsController> {
                                           controller.requiredFieldController
                                               .add(TextEditingController());
                                           return UnderlineTextFieldWidget(
-                                            labelText: controller
-                                                    .authenticatorList[index]
-                                                    .parameterName
-                                                    .toString() +
-                                                ' (required)',
+                                            labelText:
+                                                '${controller.authenticatorList[index].parameterName} (required)',
                                             type: TextInputType.text,
                                             validate: controller
                                                 .authValidateList[index],
-                                            // errorText: 'required_field'.tr,
-                                            hint: controller
-                                                    .authenticatorList[index]
-                                                    .parameterName
-                                                    .toString() +
-                                                ' (required)',
+                                            hint:
+                                                '${controller.authenticatorList[index].parameterName} (required)',
                                             controller: controller
                                                 .requiredFieldController[index],
                                             suffix: const SizedBox(),

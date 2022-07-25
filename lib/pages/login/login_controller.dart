@@ -38,10 +38,10 @@ class LoginController extends MainController {
   RxBool isDriver = false.obs;
   RxBool isMerchant = true.obs;
   RxString userType = 'N'.obs;
-  // String deviceId = PrefManager().getDeviceId.toString();
+  String deviceId = PrefManager().getDeviceId.toString();
   @override
   void onInit() {
-    // deviceIdController = TextEditingController(text: deviceId);
+    deviceIdController = TextEditingController(text: deviceId);
     getDeviceToken();
     if (!PrefManager().getNewUserFlag!) {
       setServers();

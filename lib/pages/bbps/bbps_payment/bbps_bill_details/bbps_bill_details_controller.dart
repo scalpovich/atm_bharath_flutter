@@ -30,25 +30,15 @@ class BBPSBillDetailsController extends MainController {
   final RxList<TextEditingController> requiredFieldController = RxList();
   RxList<Authenticator> parameterList = <Authenticator>[].obs;
   RxList<bool> requiredList = RxList();
-  RxBool senderNameValidate = true.obs;
-  RxBool senderMobileValidate = true.obs;
+  RxBool senderNameValidate = true.obs,senderMobileValidate = true.obs;
   RxList<bool> authValidateList = RxList();
   RxList<Authenticator> authenticatorList = <Authenticator>[].obs;
   RxInt authCount = 0.obs;
   RxBool isPartialPay = false.obs;
-  RxString billerName = ''.obs;
-  RxString billFetch = ''.obs;
-  RxString onlineValidation = ''.obs;
-  RxString partialPay = ''.obs;
-  RxBool fetchBillVisible = false.obs;
-  RxBool fetchBillClicked = false.obs;
-  RxString billerId = ''.obs;
-  RxString billerImage = ''.obs;
-  RxString category = ''.obs;
-  RxString ipAddress = ''.obs;
-  RxString macAddress = ''.obs;
-  RxString postalCode = ''.obs;
-  RxString latLng = ''.obs;
+  RxString billerName = ''.obs,billFetch = ''.obs,onlineValidation = ''.obs,partialPay = ''.obs;
+  RxBool fetchBillVisible = false.obs,fetchBillClicked = false.obs;
+  RxString billerId = ''.obs,billerImage = ''.obs,category = ''.obs;
+  RxString ipAddress = ''.obs,macAddress = ''.obs,postalCode = ''.obs,latLng = ''.obs;
   WifiInfoWrapper? _wifiObject;
   late Position currentPosition;
   RxBool btnClicked = false.obs;
@@ -69,6 +59,7 @@ class BBPSBillDetailsController extends MainController {
     onBillerDetails(arguments[AppStrings.txtCategoryList]);
   }
 
+  ///setting text in text fields
   void setFields() {
     senderNameController.value = TextEditingValue(text: senderName);
     senderMobileController.value = TextEditingValue(text: senderMobile);
@@ -199,9 +190,7 @@ class BBPSBillDetailsController extends MainController {
   ///getting current latitude and longitude
   Future<void> getCurrentLocation() async {
     currentPosition = await LocationService().getUserCurrentLocation();
-    latLng.value = currentPosition.latitude.toString() +
-        ',' +
-        currentPosition.longitude.toString();
+    latLng.value = '${currentPosition.latitude},${currentPosition.longitude}';
     await getPostalCodeFromLocation();
   }
 
@@ -217,12 +206,14 @@ class BBPSBillDetailsController extends MainController {
     }
   }
 
+  ///getting bill details
   void onFetchBillTap() async {
     btnClicked.value = true;
     dynamic result = await validateBiller();
     showBill(result);
   }
 
+  ///decoding api json data
   showBill(dynamic result) async {
     if (result != null) {
       if (result.status!) {
@@ -246,6 +237,7 @@ class BBPSBillDetailsController extends MainController {
     }
   }
 
+  ///sending bill details
   void sendDataToShowBill(Billlist bill, String sourceRefNo) async {
     fetchBillClicked.value = false;
     btnClicked.value = false;
@@ -278,6 +270,7 @@ class BBPSBillDetailsController extends MainController {
     );
   }
 
+  ///getting authenticators
   Future<List<String>> getAuth() async {
     List<String> authList = [];
     for (int i = 0; i < authCount.value; i++) {
@@ -291,6 +284,7 @@ class BBPSBillDetailsController extends MainController {
     return authList;
   }
 
+  ///validating biller
   Future<dynamic> validateBiller() async {
     List<String> authenticators = await getAuth();
     dynamic body = await bbpsValidateBillerBody(

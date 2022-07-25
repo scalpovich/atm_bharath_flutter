@@ -126,7 +126,7 @@ class MobileRechargeController extends MainController {
     }
   }
 
-  ///convert mobilerecharge details to bbps
+  ///convert mobile recharge details to bbps
   void convertToBBPSReport(MobileRecharge report) async {
     String endCusMobile = await AesEncryption()
         .encrypt(cusMobile, PrefManager().getCustomerCode.toString());

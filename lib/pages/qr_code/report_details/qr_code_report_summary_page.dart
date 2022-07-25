@@ -138,6 +138,7 @@ class QRCodeReportSummaryPage extends GetView<QRCodeReportSummaryController> {
                           padding:
                               const EdgeInsets.only(left: 15.0, right: 15.0),
                           child: QRReportDetailsCardWidget(
+                            status: controller.status.value,
                             amount: controller.amount.value,
                             invoiceNo: controller.invoiceNo.value,
                             invoiceName: controller.invoiceName.value,
