@@ -68,7 +68,7 @@ class LoginWidget extends GetView<LoginController> {
                           ),
                         ),
                         UnderlineTextFieldWidget(
-                          enabled: true,
+                          enabled: false,
                           validate: controller.deviceIdValidate.value,
                           errorText: 'device_id_required'.tr,
                           hint: 'device_serial_no'.tr,
